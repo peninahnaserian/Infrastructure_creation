@@ -3,6 +3,7 @@ AWSTemplateFormatVersion: '2010-09-09'
 Description: 'Infrastructure Creation'
 
 Resources:
+
   EC2Instance:
     Type: AWS::EC2::Instance
     Properties:
@@ -20,11 +21,6 @@ Resources:
           - IpProtocol: tcp
             FromPort: 22
             ToPort: 22
-            CidrIP: 0.0.0.0/0
-        Tags:
-          - Key:
-            Value:
-  
+            CidrIp: 0.0.0.0/0
 
-Outputs:
   
